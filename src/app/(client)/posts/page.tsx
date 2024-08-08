@@ -8,7 +8,7 @@ const PostsPage = async () => {
 
     return (
         <div>
-            posts page
+            {/*<PostsComponent posts={}/>*/}
         </div>
     );
 };
