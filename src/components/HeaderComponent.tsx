@@ -1,18 +1,22 @@
 import React from 'react';
-import Link from "next/link";
+import NavLinkClientComponent from "@/components/nav-link-client-component/NavLinkClientComponent";
 
 const HeaderComponent = () => {
     return (
         <div>
             <ul>
                 <li>
-                    <Link href={'/'}>home</Link>
+                    <NavLinkClientComponent path={'/'}>home</NavLinkClientComponent>
                 </li>
                 <li>
-                    <Link href={'/users'}>users</Link>
+                    <NavLinkClientComponent path={'/users'}>users page</NavLinkClientComponent>
+
                 </li>
                 <li>
-                    <Link href={'/posts'}>posts</Link>
+                    <NavLinkClientComponent path={'/posts'}>posts page</NavLinkClientComponent>
+                </li>
+                <li>
+                    <NavLinkClientComponent path={'/meals'}>meals page</NavLinkClientComponent>
                 </li>
             </ul>
         </div>
